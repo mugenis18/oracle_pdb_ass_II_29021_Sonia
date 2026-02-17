@@ -13,6 +13,7 @@ This assignment demonstrates pluggable database creation, management, deletion, 
 
 All SQL commands used in this assignment are provided in:
 
+**pluggable_database_assignment.sql**
 
 ---
 
@@ -31,11 +32,11 @@ sonia123
 
 ## Description
 
-- Created pluggable database
-- Opened PDB in READ WRITE mode
-- Created user inside PDB
-- Granted privileges
-- Verified user creation
+- Created pluggable database  
+- Opened PDB in READ WRITE mode  
+- Created user inside PDB  
+- Granted privileges  
+- Verified user creation  
 
 ## Evidence
 
@@ -43,10 +44,10 @@ sonia123
 ![PDB Creation](screenshots/task1_pdb_creation.png)
 
 ### PDB Open State
-![PDB Open State](task1_pdb_open_state.png)
+![PDB Open State](screenshots/task1_pdb_open_state.png)
 
 ### User Created
-![User Created](task1_user_created.png)
+![User Created](screenshots/task1_user_created.png)
 
 ---
 
@@ -57,24 +58,24 @@ so_to_delete_pdb_29021
 
 ## Description
 
-- Created temporary PDB
-- Verified existence
-- Deleted PDB including datafiles
-- Confirmed deletion
+- Created temporary PDB  
+- Verified existence  
+- Deleted PDB including datafiles  
+- Confirmed deletion  
 
 ## Evidence
 
 ### Temporary PDB Created
-![Temp Created](task2_temp_pdb_created.png)
+![Temp Created](screenshots/task2_temp_pdb_created.png)
 
 ### Temporary PDB Verified
-![Temp Verified](task2_temp_pdb_verified.png)
+![Temp Verified](screenshots/task2_temp_pdb_verified.png)
 
 ### Temporary PDB Deleted
-![Temp Deleted](task2_temp_pdb_deleted.png)
+![Temp Deleted](screenshots/task2_temp_pdb_deleted.png)
 
 ### Deletion Confirmed
-![Deletion Confirmed](task2_deletion_confirmed.png)
+![Deletion Confirmed](screenshots/task2_deletion_confirmed.png)
 
 ---
 
@@ -82,25 +83,32 @@ so_to_delete_pdb_29021
 
 ## Description
 
-- Accessed Oracle Enterprise Manager
-- Verified Oracle environment
-- Verified created PDB
-- Verified user account
+- Accessed Oracle Enterprise Manager  
+- Verified Oracle environment  
+- Verified created PDB  
+- Verified user account  
 
 ## Evidence
 
-![OEM Dashboard](task3_oem_dashboard.png)
+![OEM Dashboard](screenshots/task3_oem_dashboard.png)
 
 ---
 
 # Repository Contents
 
-- README.md → assignment report
-- pluggable_database_assignment.sql → SQL commands used
-- Screenshots → evidence of tasks
+- **README.md** → Assignment report  
+- **pluggable_database_assignment.sql** → All SQL commands used  
+- **screenshots/** → Evidence images for all tasks  
 
 ---
 
 # Conclusion
 
-All tasks were successfully completed including pluggable database creation, user management, temporary PDB deletion, and Oracle Enterprise Manager monitoring.
+All tasks were successfully completed including:
+
+- Pluggable database creation  
+- User management  
+- Temporary PDB deletion  
+- Oracle Enterprise Manager monitoring  
+
+This assignment demonstrates practical understanding of Oracle pluggable database administration and monitoring.
