@@ -1,19 +1,34 @@
 # Pluggable Database Assignment — Oracle Database
 
 ## Student Information
-- Name: Sonia  
-- Student ID: 29021  
-- Course: Database Systems  
+- **Name:** Sonia  
+- **Student ID:** 29021  
+- **Course:** Database Systems  
 
 ---
 
 # Assignment Overview
 
-This assignment demonstrates pluggable database creation, management, deletion, and monitoring in Oracle Database.
+This assignment demonstrates practical understanding of Oracle Multitenant Architecture through:
+
+- Pluggable Database (PDB) creation
+- PDB management and monitoring
+- User creation inside a PDB
+- Temporary PDB creation and deletion
+- Oracle Enterprise Manager monitoring
 
 All SQL commands used in this assignment are provided in:
 
 **pluggable_database_assignment.sql**
+
+---
+
+# Oracle Environment Used
+
+- Oracle Database 19c (Multitenant Architecture)
+- SQL*Plus command-line interface
+- Oracle Enterprise Manager (OEM)
+- GitHub for version control and submission
 
 ---
 
@@ -32,11 +47,14 @@ sonia123
 
 ## Description
 
-- Created pluggable database  
-- Opened PDB in READ WRITE mode  
-- Created user inside PDB  
-- Granted privileges  
-- Verified user creation  
+This task involved:
+
+- Creating a new pluggable database
+- Opening the PDB in READ WRITE mode
+- Switching session to the PDB
+- Creating a local user inside the PDB
+- Granting privileges to the user
+- Verifying successful creation
 
 ## Evidence
 
@@ -44,10 +62,10 @@ sonia123
 ![PDB Creation](screenshots/task1_pdb_creation.png)
 
 ### PDB Open State
-![PDB Open State](screenshots/task1_pdb_open_state.png)
+![PDB Open State](screenshots/Task 1 (PDB Open State).png)
 
 ### User Created
-![User Created](screenshots/task2_temp_pdb_created.png)
+![User Created](screenshots/task1_user_created.png)
 
 ---
 
@@ -58,10 +76,13 @@ so_to_delete_pdb_29021
 
 ## Description
 
-- Created temporary PDB  
-- Verified existence  
-- Deleted PDB including datafiles  
-- Confirmed deletion  
+This task demonstrated database lifecycle management by:
+
+- Creating a temporary pluggable database
+- Verifying its existence
+- Closing the database
+- Dropping the database including datafiles
+- Confirming successful deletion
 
 ## Evidence
 
@@ -74,19 +95,18 @@ so_to_delete_pdb_29021
 ### Temporary PDB Deleted
 ![Temp Deleted](screenshots/task2_temp_pdb_deleted.png)
 
-### Deletion Confirmed
-![Deletion Confirmed](screenshots/task2_deletion_confirmed.png)
-
 ---
 
-# Task 3 — Oracle Enterprise Manager
+# Task 3 — Oracle Enterprise Manager Monitoring
 
 ## Description
 
-- Accessed Oracle Enterprise Manager  
-- Verified Oracle environment  
-- Verified created PDB  
-- Verified user account  
+This task involved:
+
+- Accessing Oracle Enterprise Manager
+- Monitoring Oracle environment
+- Verifying the created pluggable database
+- Confirming user configuration
 
 ## Evidence
 
@@ -94,21 +114,75 @@ so_to_delete_pdb_29021
 
 ---
 
+# Challenges Faced and Solutions
+
+## Issue: ORA-65096 — Invalid Common User Name
+**Cause:** Attempted to create a user in the root container (CDB$ROOT).
+
+**Solution:**  
+Switched session to the pluggable database before creating the user:
+
+ALTER SESSION SET CONTAINER=so_pdb_29021;
+
+
+---
+
+## Issue: User Does Not Exist Error
+**Cause:** User creation failed due to incorrect container.
+
+**Solution:**  
+Verified container using:
+
+SHOW CON_NAME;
+
+
+Then recreated the user successfully.
+
+---
+
 # Repository Contents
 
-- **README.md** → Assignment report  
-- **pluggable_database_assignment.sql** → All SQL commands used  
-- **screenshots/** → Evidence images for all tasks  
+- **README.md** → Assignment report
+- **pluggable_database_assignment.sql** → SQL commands used
+- **screenshots/** → Evidence of completed tasks
+
+---
+
+# Integrity Statement
+
+I confirm that this work is my own and was completed following academic integrity guidelines.  
+All commands were executed personally, and results were documented truthfully.
+
+---
+
+# Final Checklist (Apply Before Submission)
+
+- [x] Correct PDB names used
+- [x] User created inside the PDB
+- [x] Temporary PDB created and deleted
+- [x] OEM dashboard screenshot included
+- [x] GitHub repository is PUBLIC
+- [x] README is clear and professional
+- [x] Deadline respected
+
+---
+
+# Professional & Ethical Note
+
+**Excellence is never an accident; it is the result of discipline, commitment, and integrity.**
+
+As future database professionals, precision, discipline, and integrity are non-negotiable principles that guide responsible system administration and data management.
 
 ---
 
 # Conclusion
 
-All tasks were successfully completed including:
+This assignment successfully demonstrated:
 
-- Pluggable database creation  
-- User management  
-- Temporary PDB deletion  
-- Oracle Enterprise Manager monitoring  
+- Oracle pluggable database creation and management
+- User administration within a PDB
+- Database lifecycle operations
+- Oracle Enterprise Manager monitoring
+- Proper documentation and version control using GitHub
 
-This assignment demonstrates practical understanding of Oracle pluggable database administration and monitoring.
+The tasks strengthened practical knowledge of Oracle database administration and multitenant architecture.
