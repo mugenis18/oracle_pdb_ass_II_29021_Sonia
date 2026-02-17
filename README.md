@@ -62,7 +62,8 @@ This task involved:
 ![PDB Creation](screenshots/task1_pdb_creation.png)
 
 ### PDB Open State
-![PDB Open State](screenshots/Task 1 (PDB Open State).png)
+![PDB Open State](screenshots/task1_pdb_open_state.png)
+
 
 ### User Created
 ![User Created](screenshots/task1_user_created.png)
