@@ -47,7 +47,7 @@ sonia123
 ![PDB Open State](screenshots/task1_pdb_open_state.png)
 
 ### User Created
-![User Created](screenshots/task1_user_created.png)
+![User Created](screenshots/task2_temp_pdb_created.png)
 
 ---
 
