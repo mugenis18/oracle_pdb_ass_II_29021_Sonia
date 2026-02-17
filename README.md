@@ -40,7 +40,7 @@ sonia123
 ## Evidence
 
 ### PDB Creation
-![PDB Creation](task1_pdb_creation.png)
+![PDB Creation](screenshots/task1_pdb_creation.png)
 
 ### PDB Open State
 ![PDB Open State](task1_pdb_open_state.png)
